@@ -5,7 +5,7 @@ $email = $_post['email'];
 $subjact = $_post['subjact'];
 $message = $_post['message'];
 
-require 'vendor/autoload.php';
+require 'assets/vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
