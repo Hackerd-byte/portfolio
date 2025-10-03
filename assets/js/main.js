@@ -187,14 +187,4 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
-
-  let frm=document.querySelector(".php-email-form");
-
-  frm.addEventListener("submit",function(e){
-    e.preventDefault();
-    alert("Message sent Successfully!!!");
-    frm.reset();
-  })
-  
-
 })();

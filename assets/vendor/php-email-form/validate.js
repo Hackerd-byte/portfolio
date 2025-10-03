@@ -61,6 +61,7 @@
       if (data.ok) {
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset();
+        thisForm.querySelector('.sent-message').classList.remove('d-block');
       } else {
         throw new Error(data.error || 'Form submission failed.');
       }
@@ -75,5 +76,6 @@
     thisForm.querySelector('.error-message').innerHTML = error;
     thisForm.querySelector('.error-message').classList.add('d-block');
   }
+
 
 })();
