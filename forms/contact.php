@@ -39,8 +39,8 @@ if ($_SERVER["REQUEST_METHOD"]==="POST"){
     } catch(Exception $e){
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
-} /* else{
+} else{
     header(("Location: index.html"));
     exit(0);
-} */
+}
 ?>
