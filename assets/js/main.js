@@ -187,4 +187,17 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+
+  let frm=document.querySelector(".php-email-form");
+
+  frm.addEventListener("submit",function(e){
+    e.preventDefault();
+    alert("Message sent Successfully!!!");
+    document.getElementById('name-field').value='';
+    document.getElementById('email-field').value='';
+    document.getElementById('subject-field').value='';
+    document.getElementById('message-field').value='';
+  })
+  
+
 })();
