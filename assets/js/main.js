@@ -193,10 +193,7 @@
   frm.addEventListener("submit",function(e){
     e.preventDefault();
     alert("Message sent Successfully!!!");
-    document.getElementById('name-field').value='';
-    document.getElementById('email-field').value='';
-    document.getElementById('subject-field').value='';
-    document.getElementById('message-field').value='';
+    frm.reset();
   })
   
 
